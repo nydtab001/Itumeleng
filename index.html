@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eee9ad5f5a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav class="outer-nav">
+        <div class="contact-info">
+          <div style="margin: 5px 0;"><i class="fa-solid fa-location-dot" style="padding-right: 10px;font-size: 20px;"></i>1A Stafford Street, Westdene</div>
+          <ul style="display: flex;align-items: center;cursor: pointer;margin: 0px;">
+            <li><div style="margin-right: 10px; display: flex;align-items: center;"><i style="margin-right: 10px;font-size: 21px;" class="fa-regular fa-envelope"></i>Email:</div></li>
+            <li><div style="margin: 0;display: flex;align-items: center;"><i style="margin-right: 10px;font-size: 21px;" class="fa-regular fa-envelope"></i>Call:</div></li>
+          </ul>
+        </div>
+        <div class="inner-nav">
+            <div style="display: flex; justify-content: space-between; padding-left: 5px;">
+                <h2 id="name"><a href="#">Daycare logo</a></h2>
+                <button class="hamburg" id="hamburg">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <ul class="navbar" id="navlist">
+                <li>
+                  <a href="index.html"><div class="navdiv">Home</div></a>
+                </li>
+                <li>
+                  <a href="about-us.html"><div class="navdiv">About Us</div></a>
+                </li>
+                <li>
+                  <a href="programs.html"><div class="navdiv">Our Programs</div></a>
+                </li>
+                <li>
+                    <a href="contact-us.html"><div class="navdiv">Contact Us</div></a>
+                </li>
+            </ul>
+          </div>
+      </nav>
+      <section class="image-sect">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="imgs/circ.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src="imgs/ras.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+              <img src="imgs/ras2.png" alt="Image 3">
+            </div>
+            <div class="slide">
+              <img src="imgs/ras3.jpg" alt="Image 4">
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>            
+      </section>
+      <section class="main-sect">
+        <h2 style="font-size: 34px; width: 100%; margin: 0">Welcome</h2>
+        <p>Welcome message. A warm and inviting greeting to visitors, introducing them to the daycare center.</p>
+      </section>
+      <footer>
+        <section>
+          <h4>CONTACT</h4>
+          <div style="padding-bottom: 5px;">EMAIL: <a href="mailto:"></a></div>
+          <div style="padding-bottom: 5px;">PHONE: <a href=""></a></div>
+        </section>
+      </footer>
+      <script src="src/main.js"></script>
+    </body>
+</html>

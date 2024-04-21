@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fredoka", sans-serif;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-sect {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 80px 0 80px;
+    box-sizing: border-box;
+  }
+
+.hamburg {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar.show {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.inner-nav {
+    background-color: rgba(255, 230, 255, 0.5);
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.outer-nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 100%; /* Adjust container width as needed */
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Start with slides hidden */
+    position: absolute;
+    transition: opacity 1s ease; /* Add smooth transition for opacity */
+  }
+
+  .slide img {
+    width: 100%; /* Ensure the image fills the entire width of the slide */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale the image to cover the entire slide, maintaining aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    object-position: center top;
+  }
+ 
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 25px;
+    border-style: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 5px;
+  }
+  
+  .next-btn {
+    right: 5px;
+  }  
+
+.navdiv {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.navdiv:hover {
+    background-color: navy;
+    color: white;
+}
+
+.contact-info {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 128, 0.9);
+    color: white;
+}
+
+.image-sect {
+    width: 100%; 
+    height:600px;
+}
+
+@media only screen and (min-width: 500px){
+    .hamburg {
+        display: none;
+      }
+    
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+    .inner-nav {
+        display: flex;
+      }
+
+}
+
+@media screen and (max-width: 600px) {
+    .image-sect {
+        height: 400px;
+    }
+
+}
+
+.fa-brands {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    margin: 5px 5px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: navy;
+  }
+
+  p {
+    color: navy;
+    font-size: 18px;
+  }
+
+  footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #182153;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0 20px 0;
+  }
+  
+  footer section {
+    padding: 0 80px 0 80px;
+    color: white;
+  }
+  
+

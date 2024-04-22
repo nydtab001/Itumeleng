@@ -133,7 +133,7 @@ body {
     color: white;
 }
 
-.outer-nav div a div{
+.outer-nav .contact-info div a div{
   display: none;
 }
 
@@ -164,7 +164,7 @@ body {
       padding: 50px 80px 60px 80px;
     }
 
-    .outer-nav div a div{
+    .outer-nav .contact-info div a div{
       display: block;
     }
 

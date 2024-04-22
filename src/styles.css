@@ -133,9 +133,11 @@ body {
     color: white;
 }
 
-.outer-nav .contact-info div a div{
+.outer-nav .contact-info a div{
   display: none;
 }
+
+
 
 .image-sect {
     width: 100%; 
@@ -164,7 +166,7 @@ body {
       padding: 50px 80px 60px 80px;
     }
 
-    .outer-nav .contact-info div a div{
+    .outer-nav .contact-info a div{
       display: block;
     }
 
@@ -175,6 +177,9 @@ body {
         height: 400px;
     }
 
+    .outer-nav .contact-info a div{
+      display: none;
+    }
 }
 
 .fa-brands {

@@ -133,6 +133,10 @@ body {
     color: white;
 }
 
+.outer-nav div a div{
+  display: none;
+}
+
 .image-sect {
     width: 100%; 
     height:600px;
@@ -158,6 +162,10 @@ body {
 
     .main-sect{
       padding: 50px 80px 60px 80px;
+    }
+
+    .outer-nav div a div{
+      display: block;
     }
 
 }

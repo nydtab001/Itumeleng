@@ -146,10 +146,6 @@ body {
   display: none;
 }
 
-.inner-nav {
-  display: flex;
-}
-
 .contact-link {
   display: flex;
   align-items: center;

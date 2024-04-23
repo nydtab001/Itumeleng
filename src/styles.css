@@ -227,7 +227,7 @@ li {
     font-size: 18px;
   }
 
-  a, button {
+  a, button, div {
     -webkit-user-select: text; /* Safari */
     -moz-user-select: text; /* Firefox */
     -ms-user-select: text; /* IE 10+ */

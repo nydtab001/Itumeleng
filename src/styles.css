@@ -32,6 +32,7 @@ body {
     align-items: center;
     z-index: 1000;
     width: 100%;
+    display: flex;
 }
 
 .outer-nav {
@@ -175,9 +176,18 @@ body {
   }
 }
 
+.logo-ham {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 600px) {
   .main-sect{
     padding: 50px 40px 60px 40px;;
+  }
+
+  .logo-ham {
+    width: 100%;
   }
 
   .hamburg {
@@ -187,7 +197,11 @@ body {
     font-size: 25px;
     cursor: pointer;
     align-items: center;
-  }  
+  }
+  
+  .inner-nav{
+    display: block;
+  }
 
   .navbar {
     display: none;

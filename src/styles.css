@@ -227,6 +227,13 @@ li {
     font-size: 18px;
   }
 
+  a, button {
+    -webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE 10+ */
+    user-select: text; /* Standard syntax */
+  }
+
   footer {
     width: 100%;
     height: fit-content;

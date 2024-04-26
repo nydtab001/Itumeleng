@@ -110,8 +110,8 @@ body {
 }
 
 .navdiv:hover {
-    background-color: navy;
-    color: white;
+  /*  background-color: navy;*/
+  /*  color: white;*/
 }
 
 .contact-info {
@@ -119,7 +119,7 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 128, 0.9);
+ /*   background-color: rgba(0, 0, 128, 0.9);*/
     color: white;
 }
 
@@ -160,6 +160,10 @@ body {
       padding: 50px 80px 60px 80px;
     }
 
+    footer section {
+      padding: 0px 80px;
+    }
+
     .outer-nav .contact-info a div{
       display: block;
     }
@@ -172,7 +176,11 @@ body {
   }
 
   .main-sect {
-    padding: 50px 60px 60px 60px
+    padding: 50px 60px 60px;
+  }
+
+  footer section {
+    padding: 0px 60px;
   }
 }
 
@@ -182,8 +190,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .main-sect{
-    padding: 50px 40px 60px 40px;;
+  .main-sect, footer section{
+    padding: 50px 40px 60px 40px;
+  }
+
+  footer section {
+    padding: 0px 40px;
   }
 
   .logo-ham {
@@ -201,6 +213,7 @@ body {
   
   .inner-nav{
     display: block;
+    padding-bottom: 1px;
   }
 
   .navbar {
@@ -253,14 +266,25 @@ li {
     width: 100%;
     height: fit-content;
     background-color: #182153;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-flow: row wrap;
-    padding: 20px 0 20px 0;
+    padding: 20px 0px;
   }
-  
-  footer section {
-    padding: 0 80px 0 80px;
+
+  footer ul li {
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .sitemap {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0px;
+  }
+
+  footer section * {
     color: white;
   }
   

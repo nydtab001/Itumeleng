@@ -2,6 +2,12 @@ const hambut = document.getElementById("hamburg");
 const nav = document.getElementById("navlist");
 const navdiv = document.querySelectorAll(".navdiv");
 const navlinks = document.querySelectorAll(".navbar li a");
+const imagesect = document.querySelector(".image-sect");
+
+document.addEventListener("DOMContentLoaded", () => {
+  var computedStyle = window.getComputedStyle(document.querySelector(".outer-nav"));
+  imagesect.style.marginTop = computedStyle.height;
+})
 
 hambut.addEventListener("click", toggleButton)
 
@@ -9,46 +15,47 @@ function toggleButton(){
     nav.classList.toggle("show")
 }
 
-navdiv.forEach((n) => n.addEventListener("click", clicked(n)));
+navdiv.forEach((n) => n.addEventListener("click", () => clicked(n)));
 
 function clicked(element) {
-//  element.style.backgroundColor = "white";
-  pagecolor(element);
+  element.style.backgroundColor = "rgb(5, 30, 69)";
+ // pagecolor(element);
 }
 
 navdiv.forEach((n) => n.addEventListener("mouseover", () => buttonhover(n)));
 
 function buttonhover(element) {
-  element.style.backgroundColor = document.querySelector(".contact-info").style.backgroundColor;
+//  element.style.backgroundColor = document.querySelector(".contact-info").style.backgroundColor;
+  pagecolor(element);
   element.style.color = "white";
 }
 
 function pagecolor(element) {
   switch (element) {
     case navdiv[0]:
-      element.style.backgroundColor = "rgb(50,50,255)"; // blue
-      document.querySelector(".contact-info").style.backgroundColor = "rgba(50,50,255, 0.9)"
+      element.style.backgroundColor = "rgba(188, 222, 235, 1)"; // blue
+   //   document.querySelector(".contact-info").style.backgroundColor = "rgba(50,50,255, 0.9)"
       break;
     case navdiv[1]:
-      element.style.backgroundColor = "rgb(245, 60, 60)"; // red
-      document.querySelector(".contact-info").style.backgroundColor = "rgba(245,60,60, 0.9)"
+      element.style.backgroundColor = "rgba(237, 133, 178, 1)"; // pink
+   //   document.querySelector(".contact-info").style.backgroundColor = "rgba(235, 50, 50, 0.9)"
       break;
     case navdiv[2]:
-      element.style.backgroundColor = "rgb(255, 190, 50)"; // yellow
-      document.querySelector(".contact-info").style.backgroundColor = "rgba(255,190,50, 0.9)"
+      element.style.backgroundColor = "rgba(246, 226, 107, 1)"; // yellow
+    //  document.querySelector(".contact-info").style.backgroundColor = "rgba(225,170,20, 0.9)"
       break;
     case navdiv[3]:
-      element.style.backgroundColor = "rgb(50,230,50)"; // green
-      document.querySelector(".contact-info").style.backgroundColor = "rgba(50,230,50, 0.9)"
+      element.style.backgroundColor = "rgba(238, 134, 29, 1)"; // green
+    //  document.querySelector(".contact-info").style.backgroundColor = "rgba(50,230,50, 0.9)"
       break;
-  /*  case navdiv[4]:
+    /*case navdiv[4]:
       element.style.backgroundColor = "navy";
       break;
     case navdiv[5]:
       element.style.backgroundColor = "navy";
       break;*/
   }
-  element.style.color = "white";
+//  element.style.color = "white";
 }
 
 navdiv.forEach((n) => n.addEventListener('mouseout', () => {
@@ -57,11 +64,11 @@ navdiv.forEach((n) => n.addEventListener('mouseout', () => {
  // n.style.color = 'navy';
 }))
 
-function resetBackgroundColors() {
+/*function resetBackgroundColors() {
   navdiv.forEach((n) => {
     n.style.backgroundColor = "";
   });
-}
+}*/
 
 // Call the setActiveLink function when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", setActiveLink);
@@ -81,14 +88,13 @@ function setActiveLink() {
  //   console.log(normalizedHref);
     if (normalizedHref === normalizedCurrentPage) {
       // Set background color of parent div
-     // link.querySelector(".navdiv").style.backgroundColor =
-     //   "navy";
+  //    link.querySelector(".navdiv").style.backgroundColor = "rgb(5, 30, 69)";
       pagecolor(link.querySelector(".navdiv"))
       link.querySelector(".navdiv").style.color = "white";
         
     } else {
       link.querySelector(".navdiv").style.backgroundColor = "";
-      link.querySelector(".navdiv").style.color = "navy";
+      link.querySelector(".navdiv").style.color = "rgb(5, 30, 69)";
     }
   });
 }

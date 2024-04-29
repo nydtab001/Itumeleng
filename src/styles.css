@@ -13,26 +13,21 @@ body {
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
+    padding: 50px 80px 60px;
   }
 
 .main-sect ul li{
   list-style: disc !important;
 }
 
-.navbar.show {
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
 .inner-nav {
-    background-color: rgba(255, 230, 255, 0.5);
     height: fit-content;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     width: 100%;
     display: flex;
+    padding: 0px 80px;
 }
 
 .outer-nav {
@@ -40,6 +35,9 @@ body {
     top: 0px;
     width: 100%;
     z-index: 1000;
+    height: fit-content;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .slider-container {
@@ -110,21 +108,21 @@ body {
 }
 
 .navdiv:hover {
-  /*  background-color: navy;*/
-  /*  color: white;*/
+    background-color: rgb(5, 30, 69);
+    color: white !important;
 }
 
 .contact-info {
     width: 100%;
-    padding: 10px;
+    padding: 10px 80px;
     display: flex;
     justify-content: space-between;
- /*   background-color: rgba(0, 0, 128, 0.9);*/
+    background-color: rgba(83, 175, 253, 1);
     color: white;
 }
 
 .outer-nav .contact-info a div{
-  display: none;
+  display: block;
 }
 
 
@@ -139,8 +137,9 @@ body {
   justify-content: flex-end;
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
+  margin-left: auto;
 }
 
 .hamburg {
@@ -154,20 +153,54 @@ body {
   margin: 0px;
 }
 
-@media only screen and (min-width: 500px){
+@media screen and (max-width: 835px) {
+  .hamburg {
+    display: flex;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    top: 70px;
+    right: 5px;
+  }
 
-    .main-sect{
-      padding: 50px 80px 60px 80px;
-    }
+  .navbar {
+    display: none;
+  }
 
-    footer section {
-      padding: 0px 80px;
-    }
+  .inner-nav {
+    height: 140px;
+    padding: 0px 10px !important;
+  }
 
-    .outer-nav .contact-info a div{
-      display: block;
-    }
+  .inner-nav div img{
+    width: 120px;
+  }
 
+  .inner-nav div a div {
+    position: absolute;
+    top: 60px !important;
+    border: rgba(83, 175, 253, 0.9) solid 5px !important;
+  }
+
+  .navbar.show {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 190px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    width: 100%;
+    left: 0px;
+  }
+
+  .contact-info{
+    padding: 10px;
+  }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -179,8 +212,12 @@ body {
     padding: 50px 60px 60px;
   }
 
-  footer section {
+  .inner-nav {
     padding: 0px 60px;
+  }
+
+  footer section {
+    padding: 0px 60px !important;
   }
 }
 
@@ -190,35 +227,23 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .main-sect, footer section{
-    padding: 50px 40px 60px 40px;
+
+  .main-sect{
+    padding: 50px 40px 60px;
   }
 
   footer section {
-    padding: 0px 40px;
+    padding: 0px 40px !important;
   }
 
   .logo-ham {
     width: 100%;
-  }
-
-  .hamburg {
-    display: flex;
-    border: 0;
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 25px;
-    cursor: pointer;
-    align-items: center;
   }
   
   .inner-nav{
     display: block;
     padding-bottom: 1px;
   }
-
-  .navbar {
-    display: none;
-}
   
   .image-sect {
         height: 400px;
@@ -235,6 +260,10 @@ body {
     margin: 5px;
 }
 
+.fa-bars{
+  color: rgb(5, 30, 69);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -246,7 +275,7 @@ li {
 
   a {
     text-decoration: none;
-    color: navy;
+    color: rgb(5,30,69);
   }
 
   p {
@@ -265,10 +294,15 @@ li {
   footer {
     width: 100%;
     height: fit-content;
-    background-color: #182153;
+    background-color: rgba(116, 194, 87, 1);
     display: flex;
     flex-flow: row wrap;
     padding: 20px 0px;
+  }
+
+  footer section {
+    padding: 0px 80px;
+    width: 100%;
   }
 
   footer ul li {
@@ -279,7 +313,7 @@ li {
 
   .sitemap {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     padding: 0;
     margin: 0px;
   }

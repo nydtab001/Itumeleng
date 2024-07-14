@@ -7,15 +7,72 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/eee9ad5f5a.js" crossorigin="anonymous"></script>
+        <style>
+          #slogan {
+            z-index: 1000;
+            text-align: center;
+            font-size: 50px;
+            padding: 0px;
+            color: white;
+            text-shadow: -1px 1px black;
+          }
+
+          .slogan-div{
+            background-color: rgba(188, 222, 235, 0.6);
+            height: 292px;
+            width: 385px;
+            padding: 10px 5px;
+            border: 8px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 48%;
+            position: absolute; 
+            top: 95px;
+            left:80px;
+          }
+
+          .slogan-div-h2{
+            width: 330px;
+            height: auto;
+          }
+
+          @media screen and (max-width: 835px) {
+            #slogan {
+              font-size: 30px;
+            }
+
+            .slogan-div{
+              bottom: 0px;
+              top: auto;
+              width: 100%;
+              left: 0px;
+              border: 0px;
+              border-radius: 0px;
+              height: fit-content;
+            }
+
+            .slogan-div-h2{
+              width: 100%;
+
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            #slogan {
+              font-size: 24px;
+            }
+          }
+        </style>
     </head>
     <body>
       <nav class="outer-nav">
         <div class="contact-info">
             <div style="margin: 5px 0; display: flex;">
-                <a href="https://www.google.com/maps/place/Itumeleng+Daycare+Centre/@-26.1811391,27.9818616,17z/data=!4m10!1m2!2m1!1sItumeleng+Daycare+Centre!3m6!1s0x1e950b634ca11c35:0x20f261ad96ec2de1!8m2!3d-26.1811391!4d27.9863677!15sChhJdHVtZWxlbmcgRGF5Y2FyZSBDZW50cmWSAQ9kYXlfY2FyZV9jZW50ZXLgAQA!16s%2Fg%2F11vkbn8twf?entry=ttu" target="_blank" style="color: white; display: flex;align-items: center;">
-                    <!--<i class="fa-solid fa-location-dot" style="padding-right: 10px;font-size: 20px;"></i>
-                    <div>1A Stafford Street, Westdene</div>-->
-                </a>
+                <!--<a href="https://www.google.com/maps/place/Itumeleng+Daycare+Centre/@-26.1811391,27.9818616,17z/data=!4m10!1m2!2m1!1sItumeleng+Daycare+Centre!3m6!1s0x1e950b634ca11c35:0x20f261ad96ec2de1!8m2!3d-26.1811391!4d27.9863677!15sChhJdHVtZWxlbmcgRGF5Y2FyZSBDZW50cmWSAQ9kYXlfY2FyZV9jZW50ZXLgAQA!16s%2Fg%2F11vkbn8twf?entry=ttu" target="_blank" style="color: white; display: flex;align-items: center;">
+                    <i class="fa-solid fa-location-dot" style="padding-right: 10px;font-size: 20px;"></i>
+                    <div>1A Stafford Street, Westdene</div>
+                </a>-->
             </div>
             <ul class="contact-link">
                 <li><a href="mailto:itumelengdaycareinfo@gmail.com" style="margin-right: 10px; display: flex;align-items: center; color: white;"><i style="margin-right: 10px;font-size: 21px;" class="fa-regular fa-envelope"></i><div>Email: itumelengdaycareinfo@gmail.com</div></a></li>
@@ -50,34 +107,45 @@
       </nav>
       <section class="image-sect">
         <div class="slider-container">
+            
           <div class="slider">
             <div class="slide">
-              <img src="imgs/circ.jpg" alt="Image 1">
+              <img src="imgs/img19.jpg" alt="Image 1">
             </div>
             <div class="slide">
-              <img src="imgs/ras.jpg" alt="Image 2">
+              <img src="imgs/img1-1.jpg" alt="Image 2">
             </div>
             <div class="slide">
-              <img src="imgs/ras2.png" alt="Image 3">
+              <img src="imgs/img16-1.jpg" alt="Image 4">
             </div>
             <div class="slide">
-              <img src="imgs/ras3.jpg" alt="Image 4">
+              <img src="imgs/img18-1.jpg" alt="Image 4">
             </div>
             <!-- Add more slides as needed -->
           </div>
+          <div class="slogan-div">
+            <div class="slogan-div-h2">
+              <h2 id="slogan">"YOUR CHILD BECOMES OUR CHILD"</h2>
+            </div>
+          </div>
+          <div style="display: flex;width: 100%;height: fit-content;align-self: center;justify-content: space-between;">
           <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
           <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
         </div>            
       </section>
       <section class="main-sect">
-        <h2 style="font-size: 34px; width: 100%; margin: 0">Welcome</h2>
-        <p>Welcome message. A warm and inviting greeting to visitors, introducing them to the daycare center.</p>
+        <h2>Welcome</h2>
+        <p>Welcome to Itumeleng Daycare Centre, where we create a nurturing and "homey" environment that fosters growth, learning, and happiness. At Itumeleng, we understand that each child is unique and deserves individual care and attention to thrive.
+        Our dedicated team is committed to laying a solid educational foundation, ensuring that your child develops the skills and confidence needed to become a well-rounded individual.</p><p> We offer a variety of engaging activities designed to stimulate young minds and encourage creativity, curiosity, and a love for learning. From interactive play sessions and arts and crafts to early literacy and numeracy skills, our programs are tailored to meet the developmental needs of each child. 
+          </p><p>Our goal is to support your child's journey, helping them to grow into confident, compassionate, and capable leaders of tomorrow. We believe that a strong start in a supportive and loving environment sets the stage for future success and lifelong learning.
+            </p><p>Join us at Itumeleng Daycare Centre, where we partner with parents to create a warm, welcoming, and enriching experience for every child. Together, we can nurture the potential within each child and watch them blossom into their best selves.</p>
       </section>
       <footer>
         <section style="display: flex;  flex-flow: row wrap;">
           <div style="padding: 0px 80px 15px 0px;">
           <h4 style="margin: 5px 0px 10px;">CONTACT</h4>
-          <div><i class="fa-solid fa-location-dot" style="padding-right: 10px;font-size: 16px;"></i>  1A Stafford Street, Westdene</div>
+          <div><a href="https://www.google.com/maps/place/Itumeleng+Daycare+Centre/@-26.1811391,27.9818616,17z/data=!4m10!1m2!2m1!1sItumeleng+Daycare+Centre!3m6!1s0x1e950b634ca11c35:0x20f261ad96ec2de1!8m2!3d-26.1811391!4d27.9863677!15sChhJdHVtZWxlbmcgRGF5Y2FyZSBDZW50cmWSAQ9kYXlfY2FyZV9jZW50ZXLgAQA!16s%2Fg%2F11vkbn8twf?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot" style="padding-right: 10px;font-size: 16px;"></i>  1A Stafford Street, Westdene</a></div>
           <div style="padding-bottom: 5px;"><a href="mailto:itumelengdaycareinfo@gmail.com"><i style="margin-right: 10px;font-size: 16px;" class="fa-regular fa-envelope"></i>itumelengdaycareinfo@gmail.com</a></div>
           <div style="padding-bottom: 5px;"><a href="tel:+27723631289"><i style="margin-right: 10px;font-size: 16px;" class="fa-solid fa-phone"></i>PHONE: +27 723 631 289</a></div>
           </div>
@@ -93,5 +161,9 @@
         </section>
       </footer>
       <script src="src/main.js"></script>
+      <script>
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+      </script>
     </body>
 </html>

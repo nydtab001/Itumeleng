@@ -4,10 +4,10 @@ const navdiv = document.querySelectorAll(".navdiv");
 const navlinks = document.querySelectorAll(".navbar li a");
 const imagesect = document.querySelector(".image-sect");
 
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   var computedStyle = window.getComputedStyle(document.querySelector(".outer-nav"));
   imagesect.style.marginTop = computedStyle.height;
-})
+})*/
 
 hambut.addEventListener("click", toggleButton)
 
@@ -126,14 +126,15 @@ function nextSlide() {
   showSlide(currentIndex);
 }
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+//prevBtn.addEventListener('click', prevSlide);
+//nextBtn.addEventListener('click', nextSlide);
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
 //nextSlide();
+document.addEventListener("DOMContentLoaded", nextSlide);
 
 showSlide(currentIndex);
 
